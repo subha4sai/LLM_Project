@@ -169,7 +169,7 @@ if send:
     st.write(st.session_state.response_text)
     if st.session_state.response_text:
         email_body = f"Here is the result of your SQL query:\n\n{st.session_state.response_text}"
-        st.session_state.email_status = send_email('bhavyaainapure@gmail.com', 'qqrc msyy lndf fzjk', email_receiver, question, email_body)
+        st.session_state.email_status = send_email('', 'qqrc msyy lndf fzjk', email_receiver, question, email_body)
         if 'Email sent successfully!' in st.session_state.email_status:
             st.success(st.session_state.email_status)
         else:
